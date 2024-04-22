@@ -139,8 +139,6 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Platform.sh settings.
-from platformshconfig import Config
-
 config = Config()
 if config.is_valid_platform():
     ALLOWED_HOSTS.append('.platformsh.site')
